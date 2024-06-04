@@ -9,10 +9,8 @@ body, html {
     font-family: 'Arial', sans-serif;
     background-color: #000000; /* Full black background */
     color: #f1f1f1; /* Softer white for less strain on eyes */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: block; /* Change to block to allow scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Content styles */
@@ -20,13 +18,12 @@ body, html {
     padding: 20px;
     max-width: 800px;
     text-align: center;
-    margin: 0 auto;
+    margin: 40px auto; /* Add some margin at the top and bottom */
 }
 
 /* Bio styles */
 .bio {
     max-width: 800px;
-    margin: 40px auto;
     text-align: center; /* Center text */
     line-height: 1.6;
     font-size: 18px;
